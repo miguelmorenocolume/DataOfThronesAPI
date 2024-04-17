@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.dataofthronesapi.ui.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_characterListFragment"
+            app:destination="@id/characterListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterListFragment"
+        android:name="com.example.dataofthronesapi.ui.characterlist.CharacterListFragment"
+        android:label="fragment_character_list"
+        tools:layout="@layout/fragment_character_list" >
+        <action
+            android:id="@+id/action_characterListFragment_to_characterDetailsFragment"
+            app:destination="@id/characterDetailsFragment" />
+        <action
+            android:id="@+id/action_characterListFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+        <action
+            android:id="@+id/action_characterListFragment_to_favCharacterFragment"
+            app:destination="@id/favCharacterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.dataofthronesapi.ui.viewpager.ViewPagerFragment"
+        android:label="ViewPagerFragment" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_characterListFragment"
+            app:destination="@id/characterListFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterDetailsFragment"
+        android:name="com.example.dataofthronesapi.ui.characterdetails.CharacterDetailsFragment"
+        android:label="CharacterDetailsFragment" >
+        <argument
+            android:name="idCharacter"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_characterDetailsFragment_to_characterListFragment"
+            app:destination="@id/characterListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.example.dataofthronesapi.ui.userinfo.UserInfoFragment"
+        android:label="UserInfoFragment" >
+        <action
+            android:id="@+id/action_userInfoFragment_to_characterListFragment"
+            app:destination="@id/characterListFragment" />
+        <action
+            android:id="@+id/action_userInfoFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_userInfoFragment_to_favCharacterFragment"
+            app:destination="@id/favCharacterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.dataofthronesapi.ui.settings.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favCharacterFragment"
+        android:name="com.example.dataofthronesapi.ui.favoritecharacterlist.FavCharacterFragment"
+        android:label="FavCharacterFragment" >
+        <action
+            android:id="@+id/action_favCharacterFragment_to_characterListFragment"
+            app:destination="@id/characterListFragment"
+            app:popUpTo="@id/characterListFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_favCharacterFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+        <action
+            android:id="@+id/action_favCharacterFragment_to_favCharacterDetailsFragment"
+            app:destination="@id/favCharacterDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favCharacterDetailsFragment"
+        android:name="com.example.dataofthronesapi.ui.favoritecharacterdetails.FavCharacterDetailsFragment"
+        android:label="FavCharacterDetailsFragment" >
+        <action
+            android:id="@+id/action_favCharacterDetailsFragment_to_favCharacterFragment"
+            app:destination="@id/favCharacterFragment" />
+        <argument
+            android:name="idCharacter"
+            app:argType="integer" />
+    </fragment>
+</navigation>

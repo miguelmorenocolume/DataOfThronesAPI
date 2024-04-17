@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/change_username"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="224dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/user"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tvUserName"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/tvUserName"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+    <CheckBox
+        android:id="@+id/checkBoxIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/enable_intro"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/etUserName"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/etUserName"
+        app:layout_constraintTop_toBottomOf="@+id/etUserName" />
+
+    <Button
+        android:id="@+id/SaveBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="123dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/save"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/BackBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxIntro" />
+
+    <Button
+        android:id="@+id/BackBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="123dp"
+        android:layout_height="52dp"
+        android:text="@string/back"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/SaveBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/SaveBtn"
+        app:layout_constraintTop_toTopOf="@+id/SaveBtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="329dp"
+        android:layout_height="365dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SaveBtn"
+        app:layout_constraintVertical_bias="0.933"
+        app:srcCompat="@drawable/dragongafas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DataOfThronesAPI</string>
+    <string name="greetings">Data of Thrones</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="user">Usuario</string>
+    <string name="word_is_empty">No se ingresó usuario</string>
+    <string name="delete">Eliminar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="accept">Aceptar</string>
+    <string name="confirm_delete_message">¿Estás seguro de que deseas eliminar %s?</string>
+    <string name="title">Título:</string>
+    <string name="house">Casa:</string>
+    <string name="version">versión de la API 1.0</string>
+    <string name="configuration">Configuración</string>
+    <string name="welcome">¡Bienvenido!</string>
+    <string name="description">DataOfThrones es una aplicación en su tercera fase de desarrollo. Ahora, accede a una API en línea para poder mostrar datos de personajes de Juego de Tronos y ¡muchas más funcionalidades!</string>
+    <string name="welcome2">Bienvenido</string>
+    <string name="start">Comenzar</string>
+    <string name="developer">Desarrollado por Miguel Moreno Columé</string>
+    <string name="characters">Personajes</string>
+    <string name="loading">Cargando Personajes</string>
+    <string name="back">Atrás</string>
+    <string name="loading_character">Cargando Personaje</string>
+    <string name="name">Nombre:</string>
+    <string name="last_name">Apellido:</string>
+    <string name="favorites">Favoritos</string>
+    <string name="settings">Ajustes</string>
+    <string name="user_info">Información de Usuario</string>
+    <string name="account">Cuenta</string>
+    <string name="your_account">Tu cuenta</string>
+    <string name="user1">Usuario:</string>
+    <string name="information">Puedes cambiar la configuración de tu usuario haciendo clic en el botón en la esquina superior derecha</string>
+    <string name="change_username">Cambiar nombre de usuario</string>
+    <string name="save">Guardar</string>
+    <string name="user_changed">El usuario se ha cambiado correctamente</string>
+    <string name="enable_intro">Omitir introducción</string>
+    <string name="fav_character">Personajes Favoritos</string>
+    <string name="comment">Comentario Comentario Comentario Comentario Comentario Comentario Comentario Comentario Comentario Comentario Comentario Comentario Comentario Comentario Comentario Comentario</string>
+    <string name="add_comment">Agregar comentario</string>
+    <string name="write_comment">Escribir comentario</string>
+    <string name="add">Agregar</string>
+    <string name="comment_is_empty">No se ingresó ningún comentario</string>
+    <string name="comments">Comentarios</string>
+
+</resources>
